@@ -1,0 +1,80 @@
+@import 'init';
+.slider {
+    text-align: center;
+    position: relative;
+    &__left {
+        fill: #fff;
+        position: absolute;
+        left: 8%;
+        top: 42px;
+        opacity: 0.5;
+    }
+    &__right {
+        fill: #fff;
+        position: absolute;
+        right: 8%;
+        top: 42px;
+        opacity: 0.5;
+    }
+    &__left:hover,
+    &__right:hover {
+        fill: #D3C1AC !important;
+        opacity: 1;
+    }
+    &__slide {
+        width: 570px;
+        margin: 0 auto 312px;
+    }
+    &__title {
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 5px;
+    }
+    &__span {
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 61px;
+        display: block;
+    }
+    &__text {
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 38px;
+    }
+    &__link {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: $linkColor;
+        border-radius: 3px;
+        padding: 18px 40px;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    &__pagination {
+        display: grid;
+        grid-template-columns: repeat(5, 20px);
+        place-items: center center;
+        justify-content: center;
+    }
+    &__pagination-item {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &__pagination-item:focus {
+        outline: none;
+    }
+    &__pagination-item_active {
+        width: 15px;
+        height: 15px;
+        background: none;
+        border: 1px solid #D3C1AD;
+        box-sizing: border-box;
+    }
+}

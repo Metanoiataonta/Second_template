@@ -1,0 +1,55 @@
+@import 'init';
+.services {
+    &__content {
+        padding: 83px 0px 88px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    &__item {
+        width: 270px;
+        position: relative;
+        padding-bottom: 30px;
+        cursor: pointer;
+    }
+    &__item::after {
+        width: 70px;
+        height: 1px;
+        border-bottom: 3px solid #F1EEE9;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 35px);
+    }
+    &__item:not(:last-of-type) {
+        margin-right: 30px;
+    }
+    &__item:hover .services__svg,
+    &__item:hover .services__title {
+        color: $hoverColor;
+        fill: $hoverColor;
+    }
+    &__item:hover::after {
+        border-bottom: 3px solid $hoverColor;
+    }
+    &__svg {
+        fill: $servicesColor;
+        margin-bottom: 30px;
+    }
+    .icon-pencil {
+        height: 46px;
+        width: 46px;
+    }
+    &__title {
+        font-family: Raleway;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 20px;
+        color: $servicesColor;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

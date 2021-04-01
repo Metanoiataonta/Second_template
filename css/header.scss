@@ -1,0 +1,60 @@
+@import 'init';
+.header a {
+    color: $headerTextColor;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: $hoverColor;
+}
+
+.header svg:hover,
+.header__logo:hover .icon-logo_header {
+    fill: $hoverColor;
+    cursor: pointer;
+}
+
+.header {
+    padding: 39px 0 50px;
+    background: url(../img/bg_header.png) no-repeat;
+    color: $headerTextColor;
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 315px;
+    }
+    .header__logo {
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+        font-family: 'Raleway';
+        font-weight: 400;
+    }
+    .icon-logo_header {
+        fill: $headerTextColor;
+    }
+    .header__nav {
+        display: flex;
+        align-items: center;
+    }
+    .header__link {
+        font-family: Montserrat;
+        font-weight: 300;
+        font-size: 14px;
+        // line-height: 17px;
+        display: block;
+        margin-right: 25px;
+    }
+    .header__link_last {
+        margin-right: 53px;
+    }
+    .header__icons {
+        display: flex;
+    }
+    .header__icon:first-child {
+        margin-right: 30px;
+    }
+    .header__icon-svg {
+        fill: $headerTextColor;
+    }
+}
