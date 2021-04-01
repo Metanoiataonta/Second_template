@@ -1,0 +1,29 @@
+.waxom-is {
+  padding-top: 80px;
+  background: #FBFAF8; }
+  .waxom-is__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+  .waxom-is__title {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #555555;
+    margin-bottom: 20px; }
+  .waxom-is__text {
+    margin-bottom: 42px;
+    width: 770px;
+    color: #8C8C8C; }
