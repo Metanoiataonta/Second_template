@@ -389,18 +389,6 @@ table {
   font-size: 14px;
   line-height: 17px; }
 
-body {
-  font-family: Montserrat, Arial, sans-serif;
-  font-weight: 300;
-  line-height: 20px; }
-
-.sprite {
-  display: none; }
-
-.container {
-  max-width: 1275px;
-  margin: 0 auto; }
-
 .waxom-is {
   padding-top: 80px;
   background: #FBFAF8; }
@@ -430,3 +418,15 @@ body {
     margin-bottom: 42px;
     width: 770px;
     color: #8C8C8C; }
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 20px; }
+
+.sprite {
+  display: none; }
+
+.container {
+  max-width: 1275px;
+  margin: 0 auto; }
