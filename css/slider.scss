@@ -57,6 +57,7 @@
     &__pagination {
         display: grid;
         grid-template-columns: repeat(5, 20px);
+        grid-template-rows: 15px;
         place-items: center center;
         justify-content: center;
     }
@@ -66,6 +67,11 @@
         background: rgba(255, 255, 255, 0.5);
         border-radius: 50%;
         cursor: pointer;
+        transition: transform 100ms;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    &__pagination-item:hover {
+        transform: scale(1.2);
     }
     &__pagination-item:focus {
         outline: none;

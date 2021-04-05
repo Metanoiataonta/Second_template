@@ -1,24 +1,52 @@
-@import 'reset',
-'../dist/sass/sprite',
-'font-face',
+@import "reset",
+"../dist/sass/sprite",
+"font-face",
 'init',
 'header',
 'slider',
 'services',
-'waxom-is';
+'waxom-is',
+'purchase-now',
+'latest-projects',
+'video-presentation';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-    font-family: Montserrat, Arial, sans-serif;
-    font-weight: 300;
-    line-height: 20px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .sprite {
-    display: none;
+  display: none;
 }
 
 .container {
-    max-width: 1275px;
-    margin: 0 auto;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.button-link {
+  box-shadow: 0 0 0 0 #c7b299;
+  transition: box-shadow 100ms;
+}
+
+.button-link:hover {
+  color: $headerTextColor !important;
+  box-shadow: 0 0 5px 3px #c7b299;
 }
 
 // fonts Raleway 400 500 600 Montserrat 300 400 roboto 400

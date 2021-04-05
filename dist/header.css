@@ -23,7 +23,8 @@
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 315px; }
+    margin-bottom: 315px;
+    max-width: 1275px; }
   .header .header__logo {
     display: -webkit-box;
     display: -webkit-flex;

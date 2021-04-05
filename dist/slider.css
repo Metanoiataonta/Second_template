@@ -47,6 +47,7 @@
   .slider__pagination {
     display: grid;
     grid-template-columns: repeat(5, 20px);
+    grid-template-rows: 15px;
     place-items: center center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -57,7 +58,19 @@
     height: 10px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 100ms;
+    transition: -webkit-transform 100ms;
+    -o-transition: transform 100ms;
+    transition: transform 100ms;
+    transition: transform 100ms, -webkit-transform 100ms;
+    -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+         -o-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .slider__pagination-item:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
   .slider__pagination-item:focus {
     outline: none; }
   .slider__pagination-item_active {
