@@ -1,0 +1,43 @@
+@import 'init';
+.purchase-now {
+    background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+    &__content {
+        padding: 45px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-family: Raleway;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        color: $headerTextColor;
+        padding-bottom: 6px;
+    }
+    &__span {
+        color: $hoverColor;
+    }
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #615855;
+    }
+    &__link {
+        display: block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $headerTextColor;
+        background-color: $linkColor;
+        border-radius: 3px;
+        padding: 19px 33px 19px 30px;
+        align-self: flex-end;
+    }
+}

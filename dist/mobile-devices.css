@@ -1,0 +1,43 @@
+.mobile-devices {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #8C8C8C;
+  padding-top: 78px;
+  background-color: #E5E5E5; }
+  .mobile-devices__img {
+    margin-right: 64px; }
+  .mobile-devices__info {
+    max-width: 670px;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+  .mobile-devices__title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #555555;
+    margin-bottom: 20px; }
+  .mobile-devices__text {
+    margin-bottom: 50px; }
+  .mobile-devices__list {
+    padding-left: 63px; }
+  .mobile-devices__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .mobile-devices__item::before {
+    content: url("../img/point.svg");
+    width: 21px;
+    height: 21px;
+    margin-right: 8px; }
+  .mobile-devices__item:not(:last-of-type) {
+    margin-bottom: 11px; }

@@ -1,0 +1,52 @@
+@import "init";
+
+.mobile-devices {
+  display: flex;
+  justify-content: center;
+  color: $latestProjectsTextColor;
+  padding-top: 78px;
+  background-color: $mobileDevicesColor;
+
+  &__img {
+    margin-right: 64px;
+  }
+
+  &__info {
+    max-width: 670px;
+    align-self: center;
+  }
+
+  &__title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: $servicesColor;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    padding-left: 63px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__item::before {
+    content: url("../img/point.svg");
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+
+  }
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 11px;
+  }
+}

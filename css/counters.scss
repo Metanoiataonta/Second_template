@@ -1,0 +1,45 @@
+@import "init";
+
+.counters {
+  background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+  padding: 36px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+
+  &__svg {
+    fill: $hoverColor;
+    margin-bottom: 2px;
+  }
+
+  &__number {
+    color: $headerTextColor;
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  &__text {
+    color: $hoverColor;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__block:not(:last-of-type) {
+    margin-right: 75px;
+  }
+
+  &__block::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $headerTextColor;
+  }
+}

@@ -1,0 +1,46 @@
+.counters {
+  background: -o-radial-gradient(4.58% 100%, 94.87% 15543.47%, #211B19 0%, #4E3326 100%);
+  background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+  padding: 36px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+  .counters__svg {
+    fill: #C7B299;
+    margin-bottom: 2px; }
+  .counters__number {
+    color: #fff;
+    font-size: 48px;
+    line-height: 59px; }
+  .counters__text {
+    color: #C7B299;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px; }
+  .counters__block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .counters__block:not(:last-of-type) {
+    margin-right: 75px; }
+  .counters__block::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #fff; }
